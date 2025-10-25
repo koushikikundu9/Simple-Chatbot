@@ -38,7 +38,7 @@ st.markdown("</div>",unsafe_allow_html=True)
 
 # --- Fixed input box ---
 st.markdown('<div class="fixed-input">', unsafe_allow_html=True)
-user_input = st.chat_input("✍️Type your message here...")
+user_input = st.chat_input("🪶Type your message here...")
 st.markdown('</div>', unsafe_allow_html=True)
 # --- Handle input ---
 if user_input:
@@ -52,6 +52,7 @@ if user_input:
 
 # --- Sidebar ---
 st.sidebar.button("🧹 Clear Chat", on_click=lambda: st.session_state.clear())
+
 
 
 
