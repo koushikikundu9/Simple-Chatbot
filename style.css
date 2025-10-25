@@ -83,5 +83,9 @@
         font-size: small;
     }
 }
+input[type="text"], textarea {
+    /* Ensure mobile keyboards don’t push page */
+    touch-action: manipulation;
+}
 
 
