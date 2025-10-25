@@ -24,8 +24,6 @@
     scrollbar-color: #D1C4E9 #F5F5F5;
 }
 
-/* Fixed input box at bottom */
-
 /* Chat bubbles */
 .user-bubble {
     background-color: #00C853;
@@ -50,6 +48,8 @@
     box-shadow: 0 1px 4px rgba(0,0,0,0.2);
 
 }
+
+/* Fixed input box at bottom */
 #fixed-input {
     position: fixed;
     bottom: 0;
@@ -86,4 +86,5 @@
         font-size: small;
     }
 }
+
 
