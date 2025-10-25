@@ -25,16 +25,6 @@
 }
 
 /* Fixed input box at bottom */
-.fixed-input {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: white;
-    padding: 12px 20px;
-    box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
-    z-index: 999;
-}
 
 /* Chat bubbles */
 .user-bubble {
@@ -74,15 +64,6 @@
     transition: bottom 0.3s ease; /* smooth move when keyboard opens */
 }
 
-/* optional: style the input inside */
-div[data-baseweb="input"] > div > div > input {
-    width: 100%;
-    padding: 10px 12px;
-    border-radius: 12px;
-    border: 1px solid #ccc;
-    font-size: 0.95rem;
-}
-
 
 @media (max-width:360px) {
     .fixed-header h2 {
@@ -105,3 +86,4 @@ div[data-baseweb="input"] > div > div > input {
         font-size: small;
     }
 }
+
