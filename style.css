@@ -60,27 +60,29 @@
     box-shadow: 0 1px 4px rgba(0,0,0,0.2);
 
 }
-div[data-baseweb="input"] {
+#fixed-input {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: 0;
-    padding: 8px 12px;
+    z-index: 999;
     background-color: white;
+    padding: 6px 12px;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-    box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
-    z-index: 999;
+    transition: bottom 0.3s ease; /* smooth move when keyboard opens */
 }
 
+/* optional: style the input inside */
 div[data-baseweb="input"] > div > div > input {
     width: 100%;
     padding: 10px 12px;
     border-radius: 12px;
     border: 1px solid #ccc;
     font-size: 0.95rem;
-}   
+}
+
 
 @media (max-width:360px) {
     .fixed-header h2 {
@@ -101,8 +103,5 @@ div[data-baseweb="input"] > div > div > input {
     .user-bubble,
     .bot-bubble {
         font-size: small;
-    }
-    div[data-baseweb="input"] > div > div > input {
-        font-size: 0.85rem;
     }
 }
