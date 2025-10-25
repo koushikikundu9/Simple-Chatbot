@@ -1,0 +1,63 @@
+.block-container {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+/* Fixed header */
+.fixed-header {
+    position: fixed;
+    z-index: 1000;
+    top: 40px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    text-align: center;
+}
+.spacer {
+    height: 65px;
+}
+
+/* Scrollable conversation area */
+.chat-container {
+    overflow-y: auto;
+    padding-right: 20px;
+    margin-bottom: 60px;
+    scrollbar-width: thin;
+    scrollbar-color: #D1C4E9 #F5F5F5;
+}
+
+/* Fixed input box at bottom */
+.fixed-input {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 12px 20px;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+    z-index: 999;
+}
+
+/* Chat bubbles */
+.user-bubble {
+    background-color: #00C853;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 12px;
+    margin: 6px 0;
+    text-align: right;
+    width: fit-content;
+    margin-left: auto;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+.bot-bubble {
+    background-color: #D1C4E9;
+    color: black;
+    padding: 10px 14px;
+    border-radius: 12px;
+    margin: 6px 0;
+    text-align: left;
+    width: fit-content;
+    margin-right: auto;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
