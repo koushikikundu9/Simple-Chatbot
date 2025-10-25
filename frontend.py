@@ -37,7 +37,28 @@ st.markdown("---")
 st.markdown("</div>",unsafe_allow_html=True)
 
 # --- Fixed input box ---
-st.markdown('<div class="fixed-input">', unsafe_allow_html=True)
+st.markdown("""
+<script>
+function moveInputAboveKeyboard() {
+    const wrapper = document.getElementById('fixed-input');
+    if (!wrapper) return;
+
+    window.addEventListener('resize', () => {
+        // Only when an input is focused
+        if (document.activeElement.tagName === 'TEXTAREA' || document.activeElement.tagName === 'INPUT') {
+            wrapper.style.position = 'absolute';
+            wrapper.style.bottom = window.innerHeight - document.activeElement.getBoundingClientRect().bottom + 'px';
+        } else {
+            wrapper.style.position = 'fixed';
+            wrapper.style.bottom = '0px';
+        }
+    });
+}
+
+setTimeout(moveInputAboveKeyboard, 1000);  // delay to wait for DOM
+</script>
+""", unsafe_allow_html=True)
+st.markdown('<div id="fixed-input">', unsafe_allow_html=True)
 user_input = st.chat_input("🪶Type your message here...")
 st.markdown('</div>', unsafe_allow_html=True)
 # --- Handle input ---
@@ -52,6 +73,7 @@ if user_input:
 
 # --- Sidebar ---
 st.sidebar.button("🧹 Clear Chat", on_click=lambda: st.session_state.clear())
+
 
 
 
