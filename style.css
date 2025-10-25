@@ -76,9 +76,14 @@
     .chat-container {
         padding: 0 10px 70px;
     }
+    .fixed-input {
+    position: sticky;
+    bottom: 0;
+    }
 
     .user-bubble,
     .bot-bubble {
         font-size: small;
     }
 }
+
