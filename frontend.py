@@ -4,7 +4,7 @@ from langchain_classic.schema import HumanMessage, AIMessage
 from main import chat_with_gemini
 
 # --- Page setup ---
-st.set_page_config(page_title="Gemini Chatbot", page_icon="🤖", layout="centered")
+st.set_page_config(page_title="AuraByte", page_icon="🤖", layout="centered")
 os.environ['GEMAI_API_KEY']=st.secrets['GEMAI_API_KEY']
 # --- Custom CSS ---
 def load_css(file_name):
@@ -15,7 +15,7 @@ load_css("style.css")
 st.markdown("<div>",unsafe_allow_html=True)
 st.markdown("""
 <div class="fixed-header">
-    <h2>Personal Assistant 🤖</h2>
+    <h2>AuraByte 🤖</h2>
     <p>Chat with your personal Gemini-powered assistant:</p>
 </div>
 """,unsafe_allow_html=True)
@@ -52,6 +52,7 @@ if user_input:
 
 # --- Sidebar ---
 st.sidebar.button("🧹 Clear Chat", on_click=lambda: st.session_state.clear())
+
 
 
 
