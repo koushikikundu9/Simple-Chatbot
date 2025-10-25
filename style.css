@@ -61,5 +61,24 @@
 
 }
 
+@media (max-width:360px) {
+    .fixed-header h2 {
+        font-size: xx-large;
+    }
 
+    .fixed-header p {
+        font-size: medium;
+    }
+    .spacer {
+    height: 2px;
+    }
 
+    .chat-container {
+        padding: 0 10px 70px;
+    }
+
+    .user-bubble,
+    .bot-bubble {
+        font-size: small;
+    }
+}
