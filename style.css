@@ -6,6 +6,8 @@
 /* Fixed header */
 .fixed-header {
     position: fixed;
+    left: 0;
+    right: 0;
     z-index: 1000;
     top: 40px;
     padding-left: auto;
@@ -86,5 +88,6 @@
         font-size: small;
     }
 }
+
 
 
