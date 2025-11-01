@@ -33,7 +33,6 @@ for msg in st.session_state.chat_history:
     elif isinstance(msg, AIMessage):
         st.markdown(f"<div class='bot-bubble'>{msg.content}</div>", unsafe_allow_html=True)
 st.markdown('</div>', unsafe_allow_html=True)
-st.markdown("---")
 st.markdown("</div>",unsafe_allow_html=True)
 
 # --- Fixed input box ---
@@ -73,6 +72,7 @@ if user_input:
 
 # --- Sidebar ---
 st.sidebar.button("🧹 Clear Chat", on_click=lambda: st.session_state.clear())
+
 
 
 
