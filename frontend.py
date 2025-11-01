@@ -17,6 +17,7 @@ st.markdown("""
 <div class="fixed-header">
     <h2>AuraByte 🤖</h2>
     <p>Chat with your personal Gemini-powered assistant:</p>
+    <p style='font-size: 20px; color: #333; text-align: center;'>🗣 Talk space</p>
 </div>
 """,unsafe_allow_html=True)
 st.markdown('<div class="spacer"></div>',unsafe_allow_html=True)
@@ -72,6 +73,7 @@ if user_input:
 
 # --- Sidebar ---
 st.sidebar.button("🧹 Clear Chat", on_click=lambda: st.session_state.clear())
+
 
 
 
