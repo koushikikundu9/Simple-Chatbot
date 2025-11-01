@@ -26,8 +26,7 @@ st.markdown('<div class="chat-container">', unsafe_allow_html=True)
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
     st.markdown("<h1 style='font-size: 48px; color: #333; text-align: center;'>How can I help you today?😊</h1>", unsafe_allow_html=True)
-else:
-    st.markdown("<p style='font-size: 20px; color: #333; text-align: center;'>🗣 Talk space</p>", unsafe_allow_html=True)
+
 for msg in st.session_state.chat_history:
     if isinstance(msg, HumanMessage):
         st.markdown(f"<div class='user-bubble'>{msg.content}</div>", unsafe_allow_html=True)
@@ -73,6 +72,7 @@ if user_input:
 
 # --- Sidebar ---
 st.sidebar.button("🧹 Clear Chat", on_click=lambda: st.session_state.clear())
+
 
 
 
