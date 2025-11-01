@@ -25,6 +25,7 @@ st.markdown('<div class="chat-container">', unsafe_allow_html=True)
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
     st.write("✍️ Send a Message")
+    st.markdown("<h1 style='font-size: 48px; color: #333;'>This is a big header</h1>", unsafe_allow_html=True)
 else:
     st.markdown("💬 Conversations")
 for msg in st.session_state.chat_history:
@@ -73,6 +74,7 @@ if user_input:
 
 # --- Sidebar ---
 st.sidebar.button("🧹 Clear Chat", on_click=lambda: st.session_state.clear())
+
 
 
 
