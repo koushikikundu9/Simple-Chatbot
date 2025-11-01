@@ -21,6 +21,7 @@
 .chat-container {
     overflow-y: auto;
     padding-right: 20px;
+    margin-top: 20px;
     margin-bottom: 60px;
     scrollbar-width: thin;
     scrollbar-color: #D1C4E9 #F5F5F5;
@@ -88,6 +89,7 @@
         font-size: small;
     }
 }
+
 
 
 
